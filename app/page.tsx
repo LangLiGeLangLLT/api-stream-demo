@@ -8,7 +8,7 @@ export default function Home() {
   const readerRef = React.useRef<ReadableStreamDefaultReader<string>>()
 
   async function onRun() {
-    const res = await fetch('http://localhost:3000/api', {
+    const res = await fetch('/api', {
       method: 'POST',
     })
 
