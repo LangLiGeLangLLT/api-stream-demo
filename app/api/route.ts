@@ -31,9 +31,5 @@ export async function POST() {
   const iterator = makeIterator()
   const stream = iteratorToStream(iterator)
 
-  return new Response(stream, {
-    headers: {
-      'Content-Type': 'text/html',
-    },
-  })
+  return new Response(stream)
 }
